@@ -1,0 +1,54 @@
+/* style.css - Canyon Tutors */
+:root{
+  --navy:#2a4d69;
+  --gold:#c49a4a;
+  --cream:#fbf7f0;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0; background:var(--cream); color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+}
+.header-bar{
+  background: linear-gradient(90deg,var(--navy), #234a66);
+  color: #fff; padding:18px 12px; display:flex; align-items:center; gap:18px;
+}
+.header-inner{ width:100%; max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+.brand{ display:flex; align-items:center; gap:12px; text-decoration:none; color:white;}
+.brand img{ width:54px; height:54px; }
+.brand h1{ font-size:1.25rem; margin:0; letter-spacing:0.2px;}
+nav.main-nav a{ color:rgba(255,255,255,0.95); margin:0 10px; text-decoration:none; font-weight:600;}
+nav.main-nav a:hover{ text-decoration:underline; opacity:0.95;}
+.container{ width:92%; max-width:1100px; margin:28px auto; padding:18px; background:white; border-radius:10px; box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+.hero{ display:flex; gap:24px; align-items:center; padding:12px;}
+.hero .left{ flex:1 }
+.hero h2{ color:var(--navy); margin:0 0 8px 0; font-size:1.8rem;}
+.cta{ margin-top:12px; display:inline-flex; gap:12px; align-items:center;}
+.btn{ background:var(--navy); color:white; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700; }
+.btn.alt{ background:transparent; border:2px solid var(--navy); color:var(--navy); }
+.quick-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+.hero .right{ width:320px; max-width:40%; }
+.placeholder-hero{ width:100%; height:220px; background:linear-gradient(180deg,#dfeaf6,#ffffff); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--navy); font-weight:700; font-size:1.1rem;}
+.section{ padding:18px 0; border-bottom:1px solid #eef2f6;}
+.section h3{ color:var(--navy); margin:0 0 8px 0;}
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px;}
+.tutor-card{ display:flex; gap:12px; align-items:center; background:linear-gradient(180deg,#ffffff,#fbfdff); padding:12px; border-radius:8px; }
+.tutor-card img{ width:88px; height:88px; object-fit:cover; border-radius:10px; border:2px solid #f1f5f9; }
+.tutor-card h4{ margin:0 0 6px 0; font-size:1.05rem;}
+.meta{ color:var(--muted); font-size:0.95rem;}
+.carousel{ position:relative; padding:12px; overflow:hidden; }
+.slide{ display:none; padding:18px; }
+.slide.active{ display:block; }
+.testimonial{ background:#fff7e6; padding:14px; border-left:4px solid var(--gold); border-radius:6px; font-style:italic; }
+.carousel-controls{ display:flex; gap:8px; margin-top:10px; align-items:center; }
+.dot{ width:10px; height:10px; background:#e6eef6; border-radius:50%; display:inline-block; cursor:pointer; }
+.dot.active{ background:var(--navy); }
+.contact-frame{ width:100%; height:640px; border:0; border-radius:8px; box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+.site-footer{ text-align:center; padding:18px; color:#fff; background:linear-gradient(90deg,var(--navy), #234a66); margin-top:20px; border-radius:8px;}
+@media (max-width:800px){
+  .hero{ flex-direction:column; }
+  .hero .right{ width:100%; max-width:none; }
+  .header-inner{ flex-direction:column; gap:12px; align-items:flex-start; }
+}
