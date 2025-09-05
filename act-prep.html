@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canyon Tutors</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/main.js" defer></script>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".site-nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  });
+</script>
+
+<body>
+<header class="site-header">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
+    </a>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="team.html">Team</a>
+    <a href="act-prep.html">ACT Prep</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="menu-toggle">☰</button>
+</header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <h1>ACT Prep Services</h1>
+    <p>Choose the option that fits your needs — from a quick cram session to in-depth tutoring to our high-value prep class.</p>
+  </section>
+
+  <!-- Service Options -->
+  <section class="card-grid">
+    <!-- Cram Course -->
+    <div class="card">
+      <h3>Cram Course</h3>
+      <p>One evening, two hours online. Learn tips, strategies, and hacks to boost your ACT score.</p>
+      <p><strong>$25 / 2 hours</strong></p>
+      <a href="contact.html" class="btn-primary">Sign Up</a>
+    </div>
+
+    <!-- One-on-One Tutoring -->
+    <div class="card">
+      <h3>One-on-One Tutoring</h3>
+      <p>Personalized virtual sessions focused on your strengths and weaknesses. Includes practice review and tailored strategies.</p>
+      <p><strong>$60 / hour</strong> <br> or <strong>$500 / 10 hours</strong></p>
+      <a href="contact.html" class="btn-primary">Sign Up</a>
+    </div>
+
+    <!-- Prep Class -->
+    <div class="card">
+      <h3>CanyonTutors ACT Prep Class <span style="color: var(--primary); font-size: 0.8rem;">(Best Value)</span></h3>
+      <p>Our comprehensive 4-week program. Small class sizes, expert instructors, and 1:1 check-ins.</p>
+      <p><strong>$275 / 10 hours</strong></p>
+      <a href="act-course.html" class="btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Detailed Prep Class Section -->
+  <section id="prep-class-details" class="content">
+    <h2>CanyonTutors ACT Prep Class</h2>
+    <p>This course is designed to help every student reach their full potential on the ACT. The program includes:</p>
+    <ul>
+      <li>✅ 4 in-person classes (2 hours each, over 4 weeks)</li>
+      <li>✅ Class sizes of 10 or fewer students per instructor (2 instructors per 20 students)</li>
+      <li>✅ Weekly 30-minute 1-on-1 Zoom session for personalized support</li>
+      <li>✅ Proven strategies, practice review, and goal-oriented teaching</li>
+    </ul>
+    <p><strong>Total Cost:</strong> $275 for 10 hours (~$27.50/hour)</p>
+    <a href="contact.html" class="btn-primary">Sign Up</a>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="content">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">Where are the classes held?</button>
+        <div class="faq-answer">
+          <p>Classes are held in person at our local tutoring center. Online options may be available upon request.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What materials are provided?</button>
+        <div class="faq-answer">
+          <p>We provide all practice tests, worksheets, and strategy guides. Students just need a notebook and calculator.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I switch between options later?</button>
+        <div class="faq-answer">
+          <p>Yes! If you start with one service and want to move to another, we’ll credit your payment toward the new package.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".site-nav");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("show");
+        toggle.classList.toggle("open");
+      });
+
+      // FAQ accordion
+      const faqQuestions = document.querySelectorAll(".faq-question");
+      faqQuestions.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const answer = btn.nextElementSibling;
+          const isOpen = answer.style.maxHeight;
+
+          // Close all others
+          document.querySelectorAll(".faq-answer").forEach(a => {
+            a.style.maxHeight = null;
+          });
+
+          // Toggle this one
+          if (!isOpen) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Extra styling for FAQ accordion -->
+  <style>
+    .faq-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem;
+      font-weight: bold;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 0.75rem;
+    }
+    .faq-answer p {
+      margin: 0.5rem 0 1rem;
+      color: #444;
+    }
+  </style>
+</body>
+</html>
