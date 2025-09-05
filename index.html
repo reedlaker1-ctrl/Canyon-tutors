@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script src="assets/js/main.js" defer></script>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".site-nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  });
+</script>
+
 <body>
 <header class="site-header">
   <div class="logo">
@@ -14,7 +25,6 @@
       <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
     </a>
   </div>
-  <button class="menu-toggle">☰</button>
   <nav class="site-nav">
     <a href="index.html" class="active">Home</a>
     <a href="services.html">Services</a>
@@ -23,7 +33,9 @@
     <a href="act-prep.html">ACT Prep</a>
     <a href="contact.html">Contact</a>
   </nav>
+  <button class="menu-toggle">☰</button>
 </header>
+
 
 
 
