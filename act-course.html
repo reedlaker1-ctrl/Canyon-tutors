@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canyon Tutors</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/main.js" defer></script>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".site-nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  });
+</script>
+
+<body>
+<header class="site-header">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
+    </a>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="team.html">Team</a>
+    <a href="act-prep.html">ACT Prep</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="menu-toggle">☰</button>
+</header>
+
+<!-- Hero -->
+  <section class="page-hero">
+    <h1>CanyonTutors ACT Prep Course</h1>
+    <p>A proven, structured 4-week program designed to help students maximize their ACT potential.</p>
+    <a href="contact.html" class="btn-primary">Enroll Now</a>
+  </section>
+
+  <!-- Overview -->
+  <section class="content">
+    <h2>Why Choose Our ACT Prep Course?</h2>
+    <p>This program is designed for students who want more than a quick cram session. It blends expert instruction, small group learning, and personalized 1-on-1 support. Our course is structured to give students the skills, strategies, and confidence to reach their goals.</p>
+    <ul>
+      <li>✅ Small class sizes (10 or fewer students per instructor)</li>
+      <li>✅ Experienced ACT tutors who know the exam inside-out</li>
+      <li>✅ Balance of group instruction and individual attention</li>
+        <li>✅ Weekly thirty-minute one-on-one tutoring sessions</li>
+      <li>✅ Affordable pricing at just <strong>$27.50/hour</strong></li>
+    </ul>
+  </section>
+
+  <!-- Curriculum -->
+  <section class="content">
+    <h2>Course Structure</h2>
+    <p>The course runs over 4 weeks, with structured sessions to maximize retention and improvement. Each week will start with a 2-hour class instruction and will include a 30-minute personal virtual session.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Week 1</h3>
+        <p>Introduction & strategies for English and Math sections. Includes practice problems and guided review.</p>
+      </div>
+      <div class="card">
+        <h3>Week 2</h3>
+        <p>Focus on Reading strategies and time management. 1-on-1 Zoom check-in to identify personal strengths/weaknesses.</p>
+      </div>
+      <div class="card">
+        <h3>Week 3</h3>
+        <p>Science section strategies and integrating practice tests. Group discussions to reinforce concepts.</p>
+      </div>
+      <div class="card">
+        <h3>Week 4</h3>
+        <p>Full practice test review, scoring strategies, and final prep tips. Final 1-on-1 session for personalized guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructors -->
+  <section class="content">
+    <h2>Meet Our Instructors</h2>
+    <p>Our ACT course is taught by experienced tutors who are passionate about helping students succeed.</p>
+    <div class="card-grid">
+      <div class="card">
+        <img src="assets/img/cameron.jpg" alt="Instructor Photo" class="team-photo">
+        <h3>Cameron Bess</h3>
+        <p>ACT English & Reading Specialist.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/reed.jpg" alt="Instructor Photo" class="team-photo">
+        <h3>Reed Laker</h3>
+        <p>ACT Math & Science Specialist.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="content">
+    <h2>Pricing & Value</h2>
+    <p>Our ACT Prep Course delivers <strong>10 total hours</strong> of instruction and support:</p>
+    <ul>
+      <li>4 × 2-hour small group classes (8 hours)</li>
+      <li>4 × 30-minute 1-on-1 Zoom sessions (2 hours)</li>
+    </ul>
+    <p><strong>Total Cost:</strong> $275 ($27.50/hour)</p>
+    <a href="contact.html" class="btn-primary">Enroll Now</a>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="clean-layout">
+    <h2>What Students & Parents Say</h2>
+    <div class="testimonial-card">
+      <p>“This course gave my daughter the confidence she needed. Her score went up 4 points!”</p>
+      <span class="author">– Parent of ACT Student</span>
+    </div>
+    <div class="testimonial-card">
+      <p>“The strategies actually worked. I felt way more prepared on test day.”</p>
+      <span class="author">– ACT Student</span>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="content">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">How big are the classes?</button>
+        <div class="faq-answer"><p>The classes have 20 or less students each, and with two instructors present at all times, you'll be able to ask all the questions you need.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I get individual feedback?</button>
+        <div class="faq-answer"><p>Yes! Each student gets 4 one-on-one Zoom check-ins with a tutor.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is the course online or in person?</button>
+        <div class="faq-answer"><p>Classes are in person. The one-on-one sessions are online via Zoom for flexibility.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What if I can't make it in person to a class?</button>
+        <div class="faq-answer"><p>No worries! We'll be streaming and recording the classes so that you don't miss a beat!</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Mobile menu toggle
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".site-nav");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("show");
+        toggle.classList.toggle("open");
+      });
+
+      // FAQ accordion
+      const faqQuestions = document.querySelectorAll(".faq-question");
+      faqQuestions.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const answer = btn.nextElementSibling;
+          const isOpen = answer.style.maxHeight;
+          document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
+          if (!isOpen) answer.style.maxHeight = answer.scrollHeight + "px";
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .faq-item { margin-bottom: 1rem; border-bottom: 1px solid #ddd; }
+    .faq-question {
+      width: 100%; text-align: left; padding: 0.75rem;
+      font-weight: bold; background: none; border: none;
+      cursor: pointer; font-size: 1rem;
+    }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 0.75rem;
+    }
+    .faq-answer p { margin: 0.5rem 0 1rem; color: #444; }
+  </style>
+</body>
+</html>
