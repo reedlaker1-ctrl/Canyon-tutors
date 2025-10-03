@@ -3,65 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Team – Canyon Tutors</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta name="description" content="Meet the expert tutors at Canyon Tutors in [Your City]. Experienced in math, science, and ACT prep.">
+  <title>Canyon Tutors - Our Team</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
-  });
-</script>
-
-<body>
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
-    </a>
-  </div>
-  <nav class="site-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="act-prep.html">ACT Prep</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button class="menu-toggle">☰</button>
-</header>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Canyon Tutors</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="team.html" class="text-gray-700 hover:text-blue-600 font-medium">Team</a>
+        <a href="act-prep.html" class="text-gray-700 hover:text-blue-600 font-medium">ACT Prep</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <a href="index.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Home</a>
+      <a href="services.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Services</a>
+      <a href="about.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">About</a>
+      <a href="team.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Team</a>
+      <a href="act-prep.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">ACT Prep</a>
+      <a href="contact.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Contact</a>
+    </div>
+  </header>
 
   <main>
-    <section class="page-hero">
-      <h1>Meet Our Team</h1>
-    </section>
-    <section class="card-grid">
-      <div class="card">
-        <img src="assets/img/luke.jpeg" alt="Luke" class="team-photo" />
-        <h3>Luke Henstrom</h3>
-        <p>Fluent in Spanish. High Honors/AP 4.0 student with a top-10% class rank. Experienced across AP and college courses (History, Government, English, Business, Math), Luke combines academic rigor with warmth and patience. Varsity athlete and a strong communicator.</p>
-      </div>
-      <div class="card">
-        <img src="assets/img/reed.jpg" alt="Reed" class="team-photo" />
-        <h3>Reed Laker</h3>
-        <p>Fluent in Spanish. A 4.0 student since sixth grade, Reed helps students reach their goals with clear explanations and careful pacing. Placed in top 25% in state math contest; strong AP record (Calculus BC, Physics C, US History, English, and more). Scored a 35 on the ACT and ranked first in his class. Reed brings patience and leadership as the eldest of five siblings.</p>
-      </div>
-      <div class="card">
-        <img src="assets/img/cameron.jpg" alt="Cameron" class="team-photo" />
-        <h3>Cameron Bess</h3>
-        <p>Cameron is a Finance student at UVU and a former high school High Honors/AP 4.0 student with a 34 on the ACT, top class rank, multiple AP 5’s, and English Sterling Scholar recognition. He specializes in English, writing, and ACT prep, and also has strong math and science skills. Friendly and patient, Cameron helps students build confidence, sharpen skills, and achieve their academic goals.</p>
+    <section class="container mx-auto py-12 px-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Meet Our Team</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="luke.jpg" alt="Luke Henstrom, tutor" class="mb-4 w-32 h-32 mx-auto rounded-full">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Luke Henstrom</h2>
+          <p class="text-gray-600"><strong>Specialization:</strong> Math, History, English</p>
+          <p class="text-gray-600"><strong>Achievements:</strong> High Honors/AP 4.0, Top-10% Class Rank, Varsity Athlete</p>
+          <p class="text-gray-600 mt-2">Fluent in Spanish, Luke combines academic rigor with warmth and patience to help students excel.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="reed.jpg" alt="Reed Laker, tutor" class="mb-4 w-32 h-32 mx-auto rounded-full">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Reed Laker</h2>
+          <p class="text-gray-600"><strong>Specialization:</strong> Math, Science, ACT Prep</p>
+          <p class="text-gray-600"><strong>Achievements:</strong> 35 ACT, #1 Class Rank, Top 25% State Math Contest</p>
+          <p class="text-gray-600 mt-2">Fluent in Spanish, Reed uses clear explanations and careful pacing to guide students to success.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="cameron.jpg" alt="Cameron Bess, tutor" class="mb-4 w-32 h-32 mx-auto rounded-full">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Cameron Bess</h2>
+          <p class="text-gray-600"><strong>Specialization:</strong> English, Writing, ACT Prep</p>
+          <p class="text-gray-600"><strong>Achievements:</strong> 34 ACT, English Sterling Scholar, Multiple AP 5’s</p>
+          <p class="text-gray-600 mt-2">Cameron helps students build confidence and sharpen skills with his friendly, patient approach.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Canyon Tutors</p>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://x.com/CanyonTutors" class="hover:text-blue-400">X</a>
+        <a href="https://instagram.com/Canyon.Tutors" class="hover:text-blue-400">Instagram</a>
+        <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+      </div>
+    </div>
   </footer>
-  <a href="contact.html" class="sticky-contact">Contact Us</a>
 </body>
 </html>
