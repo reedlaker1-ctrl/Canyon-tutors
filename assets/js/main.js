@@ -1,25 +1,14 @@
-// Minimal accessible toggle — expects button.menu-toggle and nav.site-nav in DOM
-document.addEventListener('DOMContentLoaded', function () {
-  const btn = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-nav');
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+}
 
-  if (!btn || !nav) return;
-
-  btn.addEventListener('click', function () {
-    const expanded = btn.classList.toggle('open'); // toggles hamburger -> X
-    nav.classList.toggle('show');                  // toggles dropdown
-    // keep aria in sync for screen readers
-    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-    btn.setAttribute('aria-pressed', expanded ? 'true' : 'false');
+// Highlight active page in navigation
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('nav a').forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
   });
 });
-
-
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-nav');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>
