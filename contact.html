@@ -3,51 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Canyon Tutors</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta name="description" content="Contact Canyon Tutors in [Your City] for expert tutoring in math, science, and ACT prep. Reach out today!">
+  <meta name="keywords" content="contact Canyon Tutors, tutoring, [Your City], ACT prep">
+  <meta name="author" content="Canyon Tutors">
+  <title>Canyon Tutors - Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
-  });
-</script>
-
-<body>
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
-    </a>
-  </div>
-  <nav class="site-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="act-prep.html">ACT Prep</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button class="menu-toggle">☰</button>
-</header>
+<body class="bg-gray-50 font-sans antialiased">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-4 md:px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Canyon Tutors</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Services</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium transition">About</a>
+        <a href="team.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Team</a>
+        <a href="act-prep.html" class="text-gray-700 hover:text-blue-600 font-medium transition">ACT Prep</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+      </div>
+      <button class="md:hidden text-2xl focus:outline-none" onclick="toggleMenu()">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <a href="index.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50 transition">Home</a>
+      <a href="services.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50 transition">Services</a>
+      <a href="about.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50 transition">About</a>
+      <a href="team.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50 transition">Team</a>
+      <a href="act-prep.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50 transition">ACT Prep</a>
+      <a href="contact.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50 transition">Contact</a>
+    </div>
+  </header>
 
   <main>
-    <section class="page-hero">
-      <h1>Contact Us</h1>
-    </section>
-    <section class="content">
-      <p>We’d love to hear from you! Fill out the form below and we’ll get back quickly.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeK5u27YfMRctGDklOxCEExgafmMbs34A3wUpxgtM7lat-azg/viewform?usp=header" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <section class="container mx-auto py-12 px-4 md:px-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Get in Touch</h1>
+      <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8">Ready to boost your grades? Fill out our form below or contact us directly!</p>
+      <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeK5u27YfMRctGDklOxCEExgafmMbs34A3wUpxgtM7lat-azg/viewform?usp=header" 
+                width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">Loading…</iframe>
+      </div>
+      <div class="text-center mt-8">
+        <p class="text-gray-600 mb-2">Email: <a href="mailto:cnyn.tutors@gmail.com" class="text-blue-600 hover:underline">info@canyontutors.com</a></p>
+        <p class="text-gray-600 mb-2">Phone: <a href="tel:+1234567890" class="text-blue-600 hover:underline">(123) 456-7890</a></p>
+        <p class="text-gray-600">Follow us: <a href="https://instagram.com/Canyon.Tutors" class="text-blue-600 hover:underline">Instagram</a></p>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Canyon Tutors</p>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 md:px-6 text-center">
+      <p class="text-sm">&copy; 2025 Canyon Tutors. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://x.com/CanyonTutors" class="hover:text-blue-400 transition">X</a>
+        <a href="https://instagram.com/CanyonTutors" class="hover:text-blue-400 transition">Instagram</a>
+        <a href="contact.html" class="hover:text-blue-400 transition">Contact Us</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
