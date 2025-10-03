@@ -3,66 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services – Canyon Tutors</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta name="description" content="Explore tutoring services at Canyon Tutors in [Your City]. Math, science, languages, and test prep tailored to your needs.">
+  <title>Canyon Tutors - Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
-  });
-</script>
-
-<body>
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
-    </a>
-  </div>
-  <nav class="site-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="act-prep.html">ACT Prep</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button class="menu-toggle">☰</button>
-</header>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Canyon Tutors</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="team.html" class="text-gray-700 hover:text-blue-600 font-medium">Team</a>
+        <a href="act-prep.html" class="text-gray-700 hover:text-blue-600 font-medium">ACT Prep</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <a href="index.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Home</a>
+      <a href="services.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Services</a>
+      <a href="about.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">About</a>
+      <a href="team.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Team</a>
+      <a href="act-prep.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">ACT Prep</a>
+      <a href="contact.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Contact</a>
+    </div>
+  </header>
 
   <main>
-    <section class="page-hero">
-      <h1>Our Tutoring Services</h1>
-    </section>
-    <section class="card-grid">
-      <div class="card">
-        <h3>Math</h3>
-        <p>Algebra, Geometry, Calculus, Statistics.</p>
+    <section class="container mx-auto py-12 px-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Our Tutoring Services</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="math-icon.jpg" alt="Math tutoring icon" class="mb-4 w-16 h-16 mx-auto">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Math</h2>
+          <p class="text-gray-600">Algebra, Geometry, Calculus, and Statistics. Our step-by-step approach builds confidence and mastery.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="science-icon.jpg" alt="Science tutoring icon" class="mb-4 w-16 h-16 mx-auto">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Science</h2>
+          <p class="text-gray-600">Biology, Chemistry, and Physics. Hands-on explanations to make complex concepts clear.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="language-icon.jpg" alt="Language tutoring icon" class="mb-4 w-16 h-16 mx-auto">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Languages</h2>
+          <p class="text-gray-600">English, Spanish, and French support. Improve writing, reading, and speaking skills.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="test-prep-icon.jpg" alt="Test prep icon" class="mb-4 w-16 h-16 mx-auto">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Test Prep</h2>
+          <p class="text-gray-600">SAT, ACT, and AP courses. Proven strategies to boost your scores.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Science</h3>
-        <p>Biology, Chemistry, Physics.</p>
-      </div>
-      <div class="card">
-        <h3>Languages</h3>
-        <p>English, Spanish, French support.</p>
-      </div>
-      <div class="card">
-        <h3>Test Prep</h3>
-        <p>SAT, ACT, AP courses.</p>
+      <div class="text-center mt-8">
+        <a href="contact.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Get Started</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Canyon Tutors</p>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://x.com/CanyonTutors" class="hover:text-blue-400">X</a>
+        <a href="https://instagram.com/Canyon.Tutors" class="hover:text-blue-400">Instagram</a>
+        <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+      </div>
+    </div>
   </footer>
-  <a href="contact.html" class="sticky-contact">Contact Us</a>
 </body>
 </html>
