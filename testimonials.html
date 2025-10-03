@@ -3,61 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials – Canyon Tutors</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>
+  <meta name="description" content="Read testimonials from students and parents about Canyon Tutors’ personalized tutoring in [Your City].">
+  <title>Canyon Tutors - Testimonials</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
-  });
-</script>
-
-<body>
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
-    </a>
-  </div>
-  <nav class="site-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="act-prep.html">ACT Prep</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button class="menu-toggle">☰</button>
-</header>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Canyon Tutors</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="team.html" class="text-gray-700 hover:text-blue-600 font-medium">Team</a>
+        <a href="act-prep.html" class="text-gray-700 hover:text-blue-600 font-medium">ACT Prep</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <a href="index.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Home</a>
+      <a href="services.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Services</a>
+      <a href="about.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">About</a>
+      <a href="team.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Team</a>
+      <a href="act-prep.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">ACT Prep</a>
+      <a href="contact.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Contact</a>
+    </div>
+  </header>
 
   <main>
-    <section class="page-hero">
-      <h1>Testimonials</h1>
-      <p>Hear directly from students and parents about their experience with Canyon Tutors.</p>
-    </section>
-
-    <section class="testimonials clean-layout">
-      <div class="testimonial-card">
-        <p>“Canyon Tutors was the reason I passed my college-level entrance exam. Reed’s patience and clear explanations made all the difference—I would not have been accepted into my dream school.”</p>
-        <span class="author">– Jarin Allen</span>
+    <section class="container mx-auto py-12 px-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Testimonials</h1>
+      <p class="text-lg text-gray-600 text-center mb-8">Hear directly from students and parents about their experience with Canyon Tutors.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="text-gray-600 italic">“Canyon Tutors was the reason I passed my college-level entrance exam. Reed’s patience and clear explanations made all the difference—I would not have been accepted into my dream school.”</p>
+          <p class="text-gray-800 font-semibold mt-4">– Jarin Allen</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="text-gray-600 italic">“My son was failing his math class, so many missing assignments and didn’t understand the concepts. Luke took the time to get to know my son and gave him confidence with his math.”</p>
+          <p class="text-gray-800 font-semibold mt-4">– Tina Alcivar, Parent</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="text-gray-600 italic">“This course gave my daughter the confidence she needed. Her score went up 4 points!”</p>
+          <p class="text-gray-800 font-semibold mt-4">– Parent of ACT Student</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="text-gray-600 italic">“The strategies actually worked. I felt way more prepared on test day.”</p>
+          <p class="text-gray-800 font-semibold mt-4">– ACT Student</p>
+        </div>
       </div>
-
-      <div class="testimonial-card">
-        <p>“My son was failing his math class, so many missing assignments and didn’t understand the concepts. I reached out to Canyon Tutors and quickly set up appointments to meet up. After the first session I knew right away this was going to work out great. Luke has a way with teaching math! He explained things so my son could understand and after the first week he told me that he actually did know what he was doing but just needed it explained in a different way. He quickly got my son caught up and passing. I can’t say it enough Canyon Tutors is amazing! Luke took the time to get to know my son and gave him confidence with his math.”</p>
-        <span class="author">– Tina Alcivar (mom of a 6th grader)</span>
+      <div class="text-center mt-8">
+        <a href="contact.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Ready to Succeed? Contact Us!</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Canyon Tutors</p>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://x.com/CanyonTutors" class="hover:text-blue-400">X</a>
+        <a href="https://instagram.com/Canyon.Tutors" class="hover:text-blue-400">Instagram</a>
+        <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+      </div>
+    </div>
   </footer>
-  <a href="contact.html" class="sticky-contact">Contact Us</a>
 </body>
 </html>
