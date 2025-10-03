@@ -1,0 +1,215 @@
+:root {
+  --primary: #1e88e5;
+  --light: #fff;
+  --dark: #222;
+}
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body { 
+  font-family: 'Inter', sans-serif; 
+  line-height: 1.5; 
+  color: var(--dark); 
+  background: #fafafa;
+}
+
+/* ===== HEADER & NAV ===== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav centered */
+  padding: 0.75rem 1rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.site-header .logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 12px; /* rounded edges */
+  display: block;
+}
+
+/* Nav links (desktop) */
+.site-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  background: var(--primary);
+  color: var(--light);
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* Mobile nav behavior */
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .site-nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .site-nav.show {
+    display: flex;
+  }
+}
+
+/* ===== HERO ===== */
+.hero { 
+  padding: 4rem 1rem; 
+  text-align: center; 
+  background: #f5f5f5; 
+}
+
+.hero h1 { 
+  font-size: 2rem; 
+  margin-bottom: 1rem; 
+}
+
+.btn-primary { 
+  display: inline-block; 
+  background: var(--primary); 
+  color: var(--light); 
+  padding: 0.75rem 1.5rem; 
+  border-radius: 8px; 
+  text-decoration: none; 
+}
+
+/* ===== CARDS ===== */
+.card-grid { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 1rem; 
+  padding: 2rem 1rem; 
+}
+
+.card { 
+  background: var(--light); 
+  padding: 1rem; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+}
+
+.card h3 { 
+  margin-bottom: 0.5rem; 
+}
+
+@media(min-width: 768px) {
+  .card-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ===== PAGE HERO & CONTENT ===== */
+.page-hero { 
+  padding: 2rem 1rem; 
+  text-align: center; 
+  background: #e3f2fd; 
+}
+
+.content { 
+  padding: 2rem 1rem; 
+  max-width: 700px; 
+  margin: auto; 
+}
+
+/* ===== FOOTER ===== */
+.site-footer { 
+  padding: 1rem; 
+  text-align: center; 
+  background: #f0f0f0; 
+  margin-top: 2rem; 
+}
+
+/* ===== STICKY CONTACT ===== */
+.sticky-contact { 
+  position: fixed; 
+  bottom: 1rem; 
+  right: 1rem; 
+  background: var(--primary); 
+  color: var(--light); 
+  padding: 0.75rem 1.25rem; 
+  border-radius: 50px; 
+  text-decoration: none; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+}
+
+/* ===== TEAM PAGE ===== */
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== TESTIMONIALS PAGE ===== */
+.clean-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .author {
+  display: block;
+  font-weight: bold;
+  color: #003366;
+  text-align: right;
+}
