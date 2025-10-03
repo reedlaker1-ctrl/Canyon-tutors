@@ -1,177 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canyon Tutors</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <script src="assets/js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Canyon Tutors offers expert ACT prep in [Your City]. Choose from our 4-week course, one-on-one tutoring, or cram session.">
+  <title>Canyon Tutors - ACT Prep</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".site-nav");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
-  });
-</script>
-
-<body>
-<header class="site-header">
-  <div class="logo">
-    <a href="index.html">
-      <img src="assets/img/logo.jpeg" alt="Canyon Tutors Logo" />
-    </a>
-  </div>
-  <nav class="site-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="act-prep.html">ACT Prep</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button class="menu-toggle">☰</button>
-</header>
-
-  <!-- Hero -->
-  <section class="page-hero">
-    <h1>ACT Prep Services</h1>
-    <p>Choose the option that fits your needs — from a quick cram session to in-depth tutoring to our high-value prep class.</p>
-  </section>
-
-  <!-- Service Options -->
-  <section class="card-grid">
-    <!-- Cram Course -->
-    <div class="card">
-      <h3>Cram Course</h3>
-      <p>One evening, two hours online. Learn tips, strategies, and hacks to boost your ACT score.</p>
-      <p><strong>$25 / 2 hours</strong></p>
-      <a href="contact.html" class="btn-primary">Sign Up</a>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Canyon Tutors</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="team.html" class="text-gray-700 hover:text-blue-600 font-medium">Team</a>
+        <a href="act-prep.html" class="text-gray-700 hover:text-blue-600 font-medium">ACT Prep</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <a href="index.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Home</a>
+      <a href="services.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Services</a>
+      <a href="about.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">About</a>
+      <a href="team.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Team</a>
+      <a href="act-prep.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">ACT Prep</a>
+      <a href="contact.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Contact</a>
     </div>
+  </header>
 
-    <!-- One-on-One Tutoring -->
-    <div class="card">
-      <h3>One-on-One Tutoring</h3>
-      <p>Personalized virtual sessions focused on your strengths and weaknesses. Includes practice review and tailored strategies.</p>
-      <p><strong>$60 / hour</strong> <br> or <strong>$500 / 10 hours</strong></p>
-      <a href="contact.html" class="btn-primary">Sign Up</a>
-    </div>
+  <main>
+    <section class="hero bg-gradient-to-r from-blue-50 to-gray-100 py-16 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Canyon Tutors ACT Prep</h1>
+      <p class="text-lg text-gray-600 mb-8">Choose the option that fits your needs — from a quick cram session to our comprehensive 4-week course.</p>
+      <a href="contact.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Sign Up Now</a>
+    </section>
 
-    <!-- Prep Class -->
-    <div class="card">
-      <h3>CanyonTutors ACT Prep Class <span style="color: var(--primary); font-size: 0.8rem;">(Best Value)</span></h3>
-      <p>Our comprehensive 4-week program. Small class sizes, expert instructors, and 1:1 check-ins.</p>
-      <p><strong>$275 / 10 hours</strong></p>
-      <a href="act-course.html" class="btn-primary">Learn More</a>
-    </div>
-  </section>
-
-  <!-- Detailed Prep Class Section -->
-  <section id="prep-class-details" class="content">
-    <h2>CanyonTutors ACT Prep Class</h2>
-    <p>This course is designed to help every student reach their full potential on the ACT. The program includes:</p>
-    <ul>
-      <li>✅ 4 in-person classes (2 hours each, over 4 weeks)</li>
-      <li>✅ Class sizes of 10 or fewer students per instructor (2 instructors per 20 students)</li>
-      <li>✅ Weekly 30-minute 1-on-1 Zoom session for personalized support</li>
-      <li>✅ Proven strategies, practice review, and goal-oriented teaching</li>
-    </ul>
-    <p><strong>Total Cost:</strong> $275 for 10 hours (~$27.50/hour)</p>
-    <a href="contact.html" class="btn-primary">Sign Up</a>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="content">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq">
-      <div class="faq-item">
-        <button class="faq-question">Where are the classes held?</button>
-        <div class="faq-answer">
-          <p>Classes are held in person at our local tutoring center. Online options may be available upon request.</p>
+    <section class="options container mx-auto py-12 px-6">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">ACT Prep Options</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Cram Course</h3>
+          <p class="text-gray-600">One evening, 2 hours online. Learn tips, strategies, and hacks to boost your ACT score.</p>
+          <p class="text-gray-800 font-bold mt-4">$25 / 2 hours</p>
+          <a href="contact.html" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 mt-4">Sign Up</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">One-on-One Tutoring</h3>
+          <p class="text-gray-600">Personalized virtual sessions focused on your strengths and weaknesses.</p>
+          <p class="text-gray-800 font-bold mt-4">$60 / hour or $500 / 10 hours</p>
+          <a href="contact.html" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 mt-4">Sign Up</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">ACT Prep Course (Best Value)</h3>
+          <p class="text-gray-600">4-week program with small classes, expert instructors, and 1:1 check-ins.</p>
+          <p class="text-gray-800 font-bold mt-4">$275 / 10 hours</p>
+          <a href="#course-details" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 mt-4">Learn More</a>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">What materials are provided?</button>
-        <div class="faq-answer">
-          <p>We provide all practice tests, worksheets, and strategy guides. Students just need a notebook and calculator.</p>
+    </section>
+
+    <section id="course-details" class="container mx-auto py-12 px-6 bg-gray-50">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">Canyon Tutors ACT Prep Course</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Our 4-week program blends expert instruction, small group learning, and personalized 1-on-1 support to maximize your ACT potential.</p>
+      <ul class="list-disc text-gray-600 max-w-3xl mx-auto mb-8">
+        <li>Small class sizes (10 or fewer students per instructor)</li>
+        <li>Experienced ACT tutors with proven results</li>
+        <li>Weekly 30-minute 1-on-1 Zoom sessions</li>
+        <li>Affordable pricing at $27.50/hour</li>
+      </ul>
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Course Structure</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 1</h4>
+          <p class="text-gray-600">Introduction & strategies for English and Math sections. Includes practice problems and guided review.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 2</h4>
+          <p class="text-gray-600">Focus on Reading strategies and time management. 1-on-1 Zoom check-in to identify strengths/weaknesses.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 3</h4>
+          <p class="text-gray-600">Science section strategies and integrating practice tests. Group discussions to reinforce concepts.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 4</h4>
+          <p class="text-gray-600">Full practice test review, scoring strategies, and final prep tips. Final 1-on-1 session.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">Can I switch between options later?</button>
-        <div class="faq-answer">
-          <p>Yes! If you start with one service and want to move to another, we’ll credit your payment toward the new package.</p>
+      <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-4">Pricing & Value</h3>
+      <p class="text-gray-600 max-w-3xl mx-auto">Total: $275 for 10 hours (4 × 2-hour classes, 4 × 30-minute 1-on-1 Zoom sessions)</p>
+      <div class="text-center mt-8">
+        <a href="contact.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Enroll Now</a>
+      </div>
+    </section>
+
+    <section class="instructors container mx-auto py-12 px-6">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">Meet Our Instructors</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Cameron Bess</h3>
+          <p class="text-gray-600">ACT English & Reading Specialist. 34 ACT, English Sterling Scholar.</p>
         </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Reed Laker</h3>
+          <p class="text-gray-600">ACT Math & Science Specialist. 35 ACT, #1 Class Rank.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials container mx-auto py-12 px-6 bg-gray-50">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">What Students & Parents Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="text-gray-600 italic">“This course gave my daughter the confidence she needed. Her score went up 4 points!”</p>
+          <p class="text-gray-800 font-semibold mt-4">– Parent of ACT Student</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="text-gray-600 italic">“The strategies actually worked. I felt way more prepared on test day.”</p>
+          <p class="text-gray-800 font-semibold mt-4">– ACT Student</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq container mx-auto py-12 px-6">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">How big are the classes?</h3>
+          <p class="text-gray-600">Classes have 10 or fewer students per instructor, ensuring personalized attention.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">Do I get individual feedback?</h3>
+          <p class="text-gray-600">Yes! Each student gets 4 one-on-one Zoom check-ins with a tutor.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">Is the course online or in person?</h3>
+          <p class="text-gray-600">Classes are in person at our [Your City] tutoring center. One-on-one sessions are via Zoom.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">What if I can’t make it in person?</h3>
+          <p class="text-gray-600">We stream and record classes so you don’t miss a thing!</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800">What materials are provided?</h3>
+          <p class="text-gray-600">We provide practice tests, worksheets, and strategy guides. Bring a notebook and calculator.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://x.com/CanyonTutors" class="hover:text-blue-400">X</a>
+        <a href="https://instagram.com/Canyon.Tutors" class="hover:text-blue-400">Instagram</a>
+        <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Mobile menu toggle
-    document.addEventListener("DOMContentLoaded", () => {
-      const toggle = document.querySelector(".menu-toggle");
-      const nav = document.querySelector(".site-nav");
-
-      toggle.addEventListener("click", () => {
-        nav.classList.toggle("show");
-        toggle.classList.toggle("open");
-      });
-
-      // FAQ accordion
-      const faqQuestions = document.querySelectorAll(".faq-question");
-      faqQuestions.forEach(btn => {
-        btn.addEventListener("click", () => {
-          const answer = btn.nextElementSibling;
-          const isOpen = answer.style.maxHeight;
-
-          // Close all others
-          document.querySelectorAll(".faq-answer").forEach(a => {
-            a.style.maxHeight = null;
-          });
-
-          // Toggle this one
-          if (!isOpen) {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-          }
-        });
-      });
-    });
-  </script>
-
-  <!-- Extra styling for FAQ accordion -->
-  <style>
-    .faq-item {
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #ddd;
-    }
-    .faq-question {
-      width: 100%;
-      text-align: left;
-      padding: 0.75rem;
-      font-weight: bold;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      padding: 0 0.75rem;
-    }
-    .faq-answer p {
-      margin: 0.5rem 0 1rem;
-      color: #444;
-    }
-  </style>
 </body>
 </html>
