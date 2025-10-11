@@ -3,164 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Canyon Tutors offers expert ACT prep in [Your City]. Choose from our 4-week course, one-on-one tutoring, or cram session.">
+  <meta name="description" content="Expert ACT prep for high school students at Canyon Tutors in [Your City]. Choose our 4-week course, one-on-one tutoring, or cram session.">
+  <meta name="keywords" content="ACT prep, Canyon Tutors, [Your City], test prep, high school tutoring">
+  <meta name="author" content="Canyon Tutors">
   <title>Canyon Tutors - ACT Prep</title>
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body class="bg-gray-100 font-sans">
-  <header class="bg-white shadow sticky top-0 z-50">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <a href="index.html" class="text-2xl font-bold text-blue-600">Canyon Tutors</a>
-      <div class="hidden md:flex space-x-6">
-        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-        <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
-        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-        <a href="team.html" class="text-gray-700 hover:text-blue-600 font-medium">Team</a>
-        <a href="act-prep.html" class="text-gray-700 hover:text-blue-600 font-medium">ACT Prep</a>
-        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+<body class="bg-white font-sans antialiased">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex items-center justify-between h-20 px-4 sm:px-6 md:px-10">
+      <div class="flex items-center space-x-4">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Canyon Tutors Logo" class="h-20 sm:h-16">
+        </a>
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-800 hover:text-green-500 font-medium transition">Home</a>
+          <a href="services.html" class="text-gray-800 hover:text-green-500 font-medium transition">Services</a>
+          <a href="about.html" class="text-gray-800 hover:text-green-500 font-medium transition">About</a>
+          <a href="team.html" class="text-gray-800 hover:text-green-500 font-medium transition">Team</a>
+          <a href="act-prep.html" class="text-gray-800 hover:text-green-500 font-medium transition">ACT Prep</a>
+          <a href="contact.html" class="text-gray-800 hover:text-green-500 font-medium transition">Contact</a>
+        </div>
       </div>
-      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+      <button class="md:hidden text-2xl focus:outline-none" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
-      <a href="index.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Home</a>
-      <a href="services.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Services</a>
-      <a href="about.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">About</a>
-      <a href="team.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Team</a>
-      <a href="act-prep.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">ACT Prep</a>
-      <a href="contact.html" class="block py-2 px-6 text-gray-700 hover:bg-blue-50">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <a href="index.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">Home</a>
+      <a href="services.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">Services</a>
+      <a href="about.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">About</a>
+      <a href="team.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">Team</a>
+      <a href="act-prep.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">ACT Prep</a>
+      <a href="contact.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">Contact</a>
     </div>
   </header>
 
   <main>
-    <section class="hero bg-gradient-to-r from-blue-50 to-gray-100 py-16 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Canyon Tutors ACT Prep</h1>
-      <p class="text-lg text-gray-600 mb-8">Choose the option that fits your needs — from a quick cram session to our comprehensive 4-week course.</p>
-      <a href="contact.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Sign Up Now</a>
+    <section class="hero bg-gradient-to-r from-white to-green-50 py-16 px-6 sm:px-8 md:px-10 text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">Excel with Canyon Tutors ACT Prep</h1>
+      <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto mb-8">Tailored test prep for high school students to ace the ACT.</p>
+      <a href="contact.html" class="inline-block bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 w-full sm:w-auto">Enroll Today</a>
     </section>
 
-    <section class="options container mx-auto py-12 px-6">
-      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">ACT Prep Options</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Cram Course</h3>
-          <p class="text-gray-600">One evening, 2 hours online. Learn tips, strategies, and hacks to boost your ACT score.</p>
-          <p class="text-gray-800 font-bold mt-4">$25 / 2 hours</p>
-          <a href="contact.html" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 mt-4">Sign Up</a>
+    <section class="options container mx-auto py-16 px-6 sm:px-8 md:px-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">ACT Prep Options</h2>
+      <div class="grid grid-cols-1 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2 text-center">One-on-One Tutoring</h3>
+          <p class="text-gray-600 text-center">Personalized virtual sessions tailored to your needs.</p>
+          <p class="text-gray-800 font-bold mt-4 text-center">$60 / hour or $500 / 10 hours</p>
+          <a href="contact.html" class="inline-block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 mt-4 block text-center w-full sm:w-auto">Sign Up</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">One-on-One Tutoring</h3>
-          <p class="text-gray-600">Personalized virtual sessions focused on your strengths and weaknesses.</p>
-          <p class="text-gray-800 font-bold mt-4">$60 / hour or $500 / 10 hours</p>
-          <a href="contact.html" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 mt-4">Sign Up</a>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">ACT Prep Course (Best Value)</h3>
-          <p class="text-gray-600">4-week program with small classes, expert instructors, and 1:1 check-ins.</p>
-          <p class="text-gray-800 font-bold mt-4">$275 / 10 hours</p>
-          <a href="#course-details" class="inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 mt-4">Learn More</a>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2 text-center">ACT Prep Course</h3>
+          <p class="text-gray-600 text-center">4-week program with small classes for high school students.</p>
+          <p class="text-gray-800 font-bold mt-4 text-center">$295 / 10 hours</p>
+          <a href="#course-details" class="inline-block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 mt-4 block text-center w-full sm:w-auto">Learn More</a>
         </div>
       </div>
     </section>
 
-    <section id="course-details" class="container mx-auto py-12 px-6 bg-gray-50">
-      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">Canyon Tutors ACT Prep Course</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Our 4-week program blends expert instruction, small group learning, and personalized 1-on-1 support to maximize your ACT potential.</p>
-      <ul class="list-disc text-gray-600 max-w-3xl mx-auto mb-8">
-        <li>Small class sizes (10 or fewer students per instructor)</li>
-        <li>Experienced ACT tutors with proven results</li>
-        <li>Weekly 30-minute 1-on-1 Zoom sessions</li>
-        <li>Affordable pricing at $27.50/hour</li>
+    <section id="course-details" class="container mx-auto py-16 px-6 sm:px-8 md:px-10 bg-white">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">Our 4-Week ACT Prep Course</h2>
+      <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto mb-8">A proven program for high school students with expert instruction and personalized support.</p>
+      <ul class="list-disc text-gray-600 max-w-xl mx-auto mb-8 pl-6">
+        <li>Small classes (15 students per 2 instructors)</li>
+        <li>Expert tutors with top ACT scores</li>
+        <li>Weekly 30-minute 1-on-1 Zoom check-ins</li>
+        <li>Affordable at $27.50/hour</li>
       </ul>
-      <h3 class="text-xl font-semibold text-gray-800 mb-4">Course Structure</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 1</h4>
-          <p class="text-gray-600">Introduction & strategies for English and Math sections. Includes practice problems and guided review.</p>
+      <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Course Structure</h3>
+      <div class="grid grid-cols-1 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-base font-semibold text-gray-800 mb-2 text-center">Week 1: Overview & Reading</h4>
+          <p class="text-gray-600 text-center">Learn to take the test—and destroy the reading section.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 2</h4>
-          <p class="text-gray-600">Focus on Reading strategies and time management. 1-on-1 Zoom check-in to identify strengths/weaknesses.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-base font-semibold text-gray-800 mb-2 text-center">Week 2: English</h4>
+          <p class="text-gray-600 text-center">Master English grammar, rhetoric, and strategies for the English section.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 3</h4>
-          <p class="text-gray-600">Science section strategies and integrating practice tests. Group discussions to reinforce concepts.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-base font-semibold text-gray-800 mb-2 text-center">Week 3: Math</h4>
+          <p class="text-gray-600 text-center">Cover key math concepts, problem-solving techniques, and test-taking tips.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="text-lg font-semibold text-gray-800 mb-2">Week 4</h4>
-          <p class="text-gray-600">Full practice test review, scoring strategies, and final prep tips. Final 1-on-1 session.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-base font-semibold text-gray-800 mb-2 text-center">Week 4: Science & Final Review</h4>
+          <p class="text-gray-600 text-center">Tackle the Science section and review a full practice test with scoring strategies.</p>
         </div>
       </div>
-      <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-4">Pricing & Value</h3>
-      <p class="text-gray-600 max-w-3xl mx-auto">Total: $275 for 10 hours (4 × 2-hour classes, 4 × 30-minute 1-on-1 Zoom sessions)</p>
+      <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4 text-center">Pricing & Value</h3>
+      <p class="text-gray-600 text-center max-w-xl mx-auto">$275 for 10 hours (4 × 2-hour classes, 4 × 30-minute 1-on-1 Zoom sessions)</p>
       <div class="text-center mt-8">
-        <a href="contact.html" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Enroll Now</a>
+        <a href="contact.html" class="inline-block bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 w-full sm:w-auto">Enroll Now</a>
       </div>
     </section>
 
-    <section class="instructors container mx-auto py-12 px-6">
-      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">Meet Our Instructors</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Cameron Bess</h3>
-          <p class="text-gray-600">ACT English & Reading Specialist. 34 ACT, English Sterling Scholar.</p>
+    <section class="instructors container mx-auto py-16 px-6 sm:px-8 md:px-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">Our ACT Instructors</h2>
+      <div class="grid grid-cols-1 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-base font-semibold text-gray-800 mb-2 text-center">Cameron Bess</h3>
+          <p class="text-gray-600 text-center">ACT English & Reading Specialist. 34 ACT.</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Reed Laker</h3>
-          <p class="text-gray-600">ACT Math & Science Specialist. 35 ACT, #1 Class Rank.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials container mx-auto py-12 px-6 bg-gray-50">
-      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">What Students & Parents Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="text-gray-600 italic">“This course gave my daughter the confidence she needed. Her score went up 4 points!”</p>
-          <p class="text-gray-800 font-semibold mt-4">– Parent of ACT Student</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="text-gray-600 italic">“The strategies actually worked. I felt way more prepared on test day.”</p>
-          <p class="text-gray-800 font-semibold mt-4">– ACT Student</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-base font-semibold text-gray-800 mb-2 text-center">Reed Laker</h3>
+          <p class="text-gray-600 text-center">ACT Math & Science Specialist. 35 ACT.</p>
         </div>
       </div>
     </section>
 
-    <section class="faq container mx-auto py-12 px-6">
-      <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
-      <div class="space-y-6 max-w-3xl mx-auto">
+    <section class="faq container mx-auto py-16 px-6 sm:px-8 md:px-10 bg-white">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-6 max-w-2xl mx-auto">
         <div>
-          <h3 class="text-lg font-semibold text-gray-800">How big are the classes?</h3>
-          <p class="text-gray-600">Classes have 10 or fewer students per instructor, ensuring personalized attention.</p>
+          <h3 class="text-base font-semibold text-gray-800">What is the class size?</h3>
+          <p class="text-gray-600">Classes have 15 or fewer students for personalized attention.</p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-800">Do I get individual feedback?</h3>
-          <p class="text-gray-600">Yes! Each student gets 4 one-on-one Zoom check-ins with a tutor.</p>
+          <h3 class="text-base font-semibold text-gray-800">Do I get personalized feedback?</h3>
+          <p class="text-gray-600">Yes, the classes are interactive and each student receives four 30-minute 1-on-1 online sessions. You'll never have a question go unanswered.</p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-800">Is the course online or in person?</h3>
-          <p class="text-gray-600">Classes are in person at our [Your City] tutoring center. One-on-one sessions are via Zoom.</p>
+          <h3 class="text-base font-semibold text-gray-800">Are classes online or in-person?</h3>
+          <p class="text-gray-600">Classes are in-person in Utah, with Zoom for 1-on-1 sessions.</p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-800">What if I can’t make it in person?</h3>
-          <p class="text-gray-600">We stream and record classes so you don’t miss a thing!</p>
+          <h3 class="text-base font-semibold text-gray-800">What if I can’t attend in person?</h3>
+          <p class="text-gray-600">Classes are streamed and recorded for flexible access.</p>
         </div>
         <div>
-          <h3 class="text-lg font-semibold text-gray-800">What materials are provided?</h3>
-          <p class="text-gray-600">We provide practice tests, worksheets, and strategy guides. Bring a notebook and calculator.</p>
+          <h3 class="text-base font-semibold text-gray-800">What materials are included?</h3>
+          <p class="text-gray-600">We provide practice tests, worksheets, and guides.</p>
+        </div>
+        <div>
+          <h3 class="text-base font-semibold text-gray-800">Why bother with the class?</h3>
+          <p class="text-gray-600">At Canyon Tutors, we want to keep tutoring effective and affordable. This hybrid class allows you to get personalized instruction without paying an arm and a leg.</p>
+        </div>
+        <div>
+          <h3 class="text-base font-semibold text-gray-800">Is there homework?</h3>
+          <p class="text-gray-600">The most essential part of ACT prep is practice. But don't worry: we've got you covered. We know high school is busy, so only expect to practice 30 minutes outside of class each week, and we'll review it one-on-one so you can get everything done.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2025 Canyon Tutors. All rights reserved.</p>
+  <footer class="bg-green-800 text-white py-8">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 text-center">
+      <p class="text-sm">&copy; 2025 Canyon Tutors. All rights reserved.</p>
       <div class="mt-4 flex justify-center space-x-4">
-        <a href="https://x.com/CanyonTutors" class="hover:text-blue-400">X</a>
-        <a href="https://instagram.com/Canyon.Tutors" class="hover:text-blue-400">Instagram</a>
-        <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+        <a href="https://x.com/CanyonTutors" class="hover:text-green-300 transition">X</a>
+        <a href="https://instagram.com/canyon.tutors" class="hover:text-green-300 transition">Instagram</a>
+        <a href="contact.html" class="hover:text-green-300 transition">Contact Us</a>
       </div>
     </div>
   </footer>
