@@ -28,7 +28,7 @@
           <a href="contact.html" class="text-gray-800 hover:text-green-500 font-medium transition">Contact</a>
         </div>
       </div>
-      <button class="md:hidden text-2xl focus:outline-none" onclick="toggleMenu()">☰</button>
+      <button class="md:hidden text-2xl focus:outline-none" onclick="toggleMenu()">Menu</button>
     </nav>
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
       <a href="index.html" class="block py-2 px-6 text-gray-800 hover:bg-green-50 transition text-center">Home</a>
@@ -41,12 +41,14 @@
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero bg-gradient-to-r from-white to-green-50 py-16 px-6 sm:px-8 md:px-10 text-center">
       <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">Excel with Canyon Tutors ACT Prep</h1>
       <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto mb-8">Tailored test prep for high school students to ace the ACT.</p>
       <a href="contact.html" class="inline-block bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 w-full sm:w-auto">Enroll Today</a>
     </section>
 
+    <!-- ACT Prep Options -->
     <section class="options container mx-auto py-16 px-6 sm:px-8 md:px-10">
       <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">ACT Prep Options</h2>
       <div class="grid grid-cols-1 gap-8">
@@ -65,6 +67,7 @@
       </div>
     </section>
 
+    <!-- 4-Week Course Details -->
     <section id="course-details" class="container mx-auto py-16 px-6 sm:px-8 md:px-10 bg-white">
       <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">Our 4-Week ACT Prep Course</h2>
       <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto mb-8">A proven program for high school students with expert instruction and personalized support.</p>
@@ -72,7 +75,7 @@
         <li>Small classes (15 students per 2 instructors)</li>
         <li>Expert tutors with top ACT scores</li>
         <li>Weekly 30-minute 1-on-1 Zoom check-ins</li>
-        <li>Affordable at $27.50/hour</li>
+        <li>Affordable at $29.50/hour</li>
       </ul>
       <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Course Structure</h3>
       <div class="grid grid-cols-1 gap-8">
@@ -94,12 +97,46 @@
         </div>
       </div>
       <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4 text-center">Pricing & Value</h3>
-      <p class="text-gray-600 text-center max-w-xl mx-auto">$275 for 10 hours (4 × 2-hour classes, 4 × 30-minute 1-on-1 Zoom sessions)</p>
+      <p class="text-gray-600 text-center max-w-xl mx-auto">$295 for 10 hours (4 × 2-hour classes, 4 × 30-minute 1-on-1 Zoom sessions)</p>
       <div class="text-center mt-8">
         <a href="contact.html" class="inline-block bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transform hover:scale-105 transition duration-300 w-full sm:w-auto">Enroll Now</a>
       </div>
     </section>
 
+    <!-- Embedded Brochure Section -->
+    <section class="container mx-auto py-16 px-6 sm:px-8 md:px-10 bg-gray-50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-6">ACT Mastery Program Brochure</h2>
+        <p class="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8">
+          Explore the full program details, schedule, testimonials, and more in our official brochure.
+        </p>
+        
+        <!-- Responsive PDF Embed -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <iframe 
+            src="assets/pdf/Canyon-Tutors-ACT-Brochure.pdf" 
+            class="w-full h-96 sm:h-screen md:h-screen lg:h-screen" 
+            style="min-height: 600px;"
+            frameborder="0"
+            title="Canyon Tutors ACT Mastery Program Brochure">
+          </iframe>
+        </div>
+
+        <!-- Fallback Download Link -->
+        <div class="text-center mt-6">
+          <p class="text-sm text-gray-500">
+            Can't view the PDF? 
+            <a href="assets/pdf/Canyon-Tutors-ACT-Brochure.pdf" 
+               download 
+               class="text-green-600 hover:text-green-700 font-medium underline">
+              Download the brochure (PDF)
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors -->
     <section class="instructors container mx-auto py-16 px-6 sm:px-8 md:px-10">
       <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">Our ACT Instructors</h2>
       <div class="grid grid-cols-1 gap-8">
@@ -114,6 +151,7 @@
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="faq container mx-auto py-16 px-6 sm:px-8 md:px-10 bg-white">
       <h2 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">Frequently Asked Questions</h2>
       <div class="space-y-6 max-w-2xl mx-auto">
@@ -149,9 +187,10 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-green-800 text-white py-8">
     <div class="container mx-auto px-4 sm:px-6 md:px-8 text-center">
-      <p class="text-sm">&copy; 2025 Canyon Tutors. All rights reserved.</p>
+      <p class="text-sm">© 2025 Canyon Tutors. All rights reserved.</p>
       <div class="mt-4 flex justify-center space-x-4">
         <a href="https://x.com/CanyonTutors" class="hover:text-green-300 transition">X</a>
         <a href="https://instagram.com/canyon.tutors" class="hover:text-green-300 transition">Instagram</a>
