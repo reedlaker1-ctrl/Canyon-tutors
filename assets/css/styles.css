@@ -1,0 +1,37 @@
+/* Custom styles to complement Tailwind CSS */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  transition: all 0.3s ease;
+}
+
+nav a.active {
+  color: #10B981;
+  font-weight: 700;
+}
+
+.hero img {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+#mobile-menu.open {
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
