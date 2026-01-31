@@ -35,3 +35,161 @@ nav a.active {
   opacity: 1;
   transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
 }
+
+/* Scroll-in animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero gradient text */
+.gradient-text {
+  background-image: linear-gradient(to right, #10B981, #059669);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Primary button lift */
+.btn-primary {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+}
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5);
+}
+
+/* Secondary (outline) button */
+.btn-secondary {
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #ECFDF5;
+  border-color: #059669;
+  transform: translateY(-2px);
+}
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5);
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+.card-hover:hover {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  transform: translateY(-4px);
+}
+
+/* Service card left borders */
+.border-left-blue { border-left: 4px solid #3B82F6; }
+.border-left-green { border-left: 4px solid #10B981; }
+.border-left-purple { border-left: 4px solid #8B5CF6; }
+.border-left-orange { border-left: 4px solid #F59E0B; }
+
+/* Testimonial decorative quote */
+.testimonial-card {
+  position: relative;
+  padding-top: 3rem;
+}
+.testimonial-card::before {
+  content: "\201C";
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: #D1FAE5;
+  font-family: Georgia, serif;
+}
+
+/* Team card top accent */
+.team-accent-green { border-top: 4px solid #10B981; }
+.team-accent-blue { border-top: 4px solid #3B82F6; }
+
+/* Team photo hover */
+.team-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover .team-photo {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px #10B981;
+}
+
+/* FAQ Accordion */
+.faq-item {
+  border-bottom: 1px solid #E5E7EB;
+}
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  user-select: none;
+}
+.faq-question:hover {
+  color: #059669;
+}
+.faq-chevron {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+.faq-item.open .faq-chevron {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding-bottom: 0;
+}
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  padding-bottom: 1rem;
+}
+
+/* Pricing card */
+.pricing-card {
+  border-top: 4px solid #10B981;
+  position: relative;
+  overflow: visible;
+}
+.pricing-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #10B981, #059669);
+  color: white;
+  padding: 4px 16px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* About feature card icon container */
+.about-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #ECFDF5;
+  flex-shrink: 0;
+  margin: 0 auto 0.75rem;
+}

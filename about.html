@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
+  <noscript><style>.fade-in{opacity:1;transform:none;}</style></noscript>
 </head>
 <body class="bg-white font-sans antialiased">
   <header class="bg-white shadow-md sticky top-0 z-50">
@@ -37,7 +38,7 @@
         </div>
       </div>
       <button class="md:hidden text-2xl focus:outline-none" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span aria-hidden="true">☰</span>
+        <span aria-hidden="true">&#9776;</span>
       </button>
     </nav>
     <div id="mobile-menu" class="md:hidden bg-white shadow-md">
@@ -52,27 +53,58 @@
 
   <main>
     <section class="container mx-auto py-16 px-6 sm:px-8 md:px-10">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">About Canyon Tutors</h1>
-      <div class="max-w-2xl mx-auto space-y-6">
-        <p class="text-base sm:text-lg text-gray-600">Founded in 2025, Canyon Tutors empowers middle and high school students with effective and affordable tutoring and test prep.</p>
-        <p class="text-base sm:text-lg text-gray-600">Based in Provo, Utah, we offer in-person tutoring throughout Salt Lake and Utah counties. For students anywhere else, we provide the same personalized experience through virtual sessions.</p>
-        <p class="text-base sm:text-lg text-gray-600">Our tutors are top-performing students and graduates who know what it takes to succeed academically. We specialize in math, science, English, history, and standardized test prep including the ACT and SAT.</p>
-        <p class="text-base sm:text-lg text-gray-600">Whether you need weekly homework help or intensive test preparation, Canyon Tutors provides a supportive, one-on-one learning environment tailored to each student's goals.</p>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4 fade-in">About Canyon Tutors</h1>
+      <p class="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12 fade-in">Founded in 2025, Canyon Tutors empowers middle and high school students with effective and affordable tutoring and test prep.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md card-hover border border-gray-100 text-center fade-in">
+          <div class="about-icon">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Local & Virtual</h3>
+          <p class="text-gray-600 text-sm">Based in Provo, Utah. In-person tutoring in Salt Lake and Utah counties, virtual sessions everywhere.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md card-hover border border-gray-100 text-center fade-in">
+          <div class="about-icon">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Expert Tutors</h3>
+          <p class="text-gray-600 text-sm">Top-performing students and graduates who know what it takes to succeed academically.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md card-hover border border-gray-100 text-center fade-in">
+          <div class="about-icon">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Wide Subject Coverage</h3>
+          <p class="text-gray-600 text-sm">Math, science, English, history, and standardized test prep including the ACT and SAT.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md card-hover border border-gray-100 text-center fade-in">
+          <div class="about-icon">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Personalized Approach</h3>
+          <p class="text-gray-600 text-sm">One-on-one learning tailored to each student's goals, from weekly homework help to intensive test prep.</p>
+        </div>
       </div>
-      <div class="text-center mt-10">
-        <a href="team.html" class="inline-block bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transform hover:scale-105 transition duration-300">Meet Our Tutors</a>
+      <div class="text-center mt-10 fade-in">
+        <a href="team.html" class="btn-primary inline-block bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300">Meet Our Tutors</a>
       </div>
     </section>
   </main>
 
-  <footer class="bg-green-800 text-white py-8">
-    <div class="container mx-auto px-6 sm:px-8 md:px-10 text-center">
-      <p class="text-sm">&copy; 2026 Canyon Tutors. All rights reserved.</p>
-      <div class="mt-4 flex justify-center space-x-4">
-        <a href="https://x.com/CanyonTutors" class="hover:text-green-300 transition">X</a>
-        <a href="https://instagram.com/canyon.tutors" class="hover:text-green-300 transition">Instagram</a>
-        <a href="contact.html" class="hover:text-green-300 transition">Contact Us</a>
+  <footer class="bg-green-800 text-white py-10">
+    <div class="container mx-auto px-6 sm:px-8 md:px-10">
+      <div class="flex flex-col md:flex-row justify-between items-center border-b border-green-700 pb-6 mb-6">
+        <p class="text-green-200 text-sm mb-4 md:mb-0">Effective &amp; affordable tutoring for every student.</p>
+        <div class="flex space-x-5">
+          <a href="https://x.com/CanyonTutors" class="hover:text-green-300 transition" aria-label="X (Twitter)">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://instagram.com/canyon.tutors" class="hover:text-green-300 transition" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
       </div>
+      <p class="text-green-300 text-sm text-center">&copy; 2026 Canyon Tutors. All rights reserved.</p>
     </div>
   </footer>
 </body>
