@@ -1,0 +1,28 @@
+{
+  "name": "canyon-tutors-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --minify",
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reedlaker1-ctrl/Canyon-tutors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/reedlaker1-ctrl/Canyon-tutors/issues"
+  },
+  "homepage": "https://github.com/reedlaker1-ctrl/Canyon-tutors#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19"
+  }
+}
